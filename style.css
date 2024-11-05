@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    font-size:xxx-large;
+}
+
+:root {
+    font-size: 16px;
+    --color-dark: #444;
+    --color-light: #eee;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  * {
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    box-sizing: border-box;
+    
+  }
+   
+  .with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 75vw;
+    margin-inline: auto;
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/02/bananas-d5a7b4c.jpg?quality=90&resize=501,455);
+    background-color: var(--color-light);
+    box-shadow: 0 0 1rem var(--color-dark);
+    border-radius: 1rem;
+  }
+  
+  .sidebar {
+    flex-grow: 1;
+    padding: 1rem;
+
+    /* 
+        If the sidebar is for an image, set a width manually.  
+        If it has content, like links or text, remove flex-basis 
+        and it will take the width of the content.
+    */
+    flex-basis: 35ch;
+    background-image: url
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .not-sidebar {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+    background-image: linear-gradient ();
+    padding: 2rem;
+    font-size: xx-large;
+    font-weight: 300;
+  }
